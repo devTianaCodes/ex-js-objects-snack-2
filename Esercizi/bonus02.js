@@ -20,4 +20,17 @@ const chef = {
     }
 }
 
-//il metodo migliore per clonare l ogetto chef 
+//il metodo migliore per clonare e spread operatior perche anbbiamo sia fmetodi
+// Ssi oggerri annidati
+
+const copyChef = {
+    ...chef,
+    restaurant: {
+        ...chef.restaurant,
+        address:{
+            ...chef.restaurant.address
+
+        }
+    }
+}
+ console.log(copyChef);
